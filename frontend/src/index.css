@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    @keyframes heartbeat {
+        0%, 100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        14% {
+          transform: translate(-50%, -50%) scale(1.15);
+        }
+        28% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        42% {
+          transform: translate(-50%, -50%) scale(1.15);
+        }
+        70% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+  .animate-heartbeat {
+    animation: heartbeat 1.6s ease-in-out infinite;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
